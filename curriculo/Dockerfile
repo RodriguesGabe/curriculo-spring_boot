@@ -7,6 +7,7 @@ WORKDIR /workspace/app
 # Copiar o arquivo pom.xml e os arquivos de código fonte
 COPY . .
 # Construir o aplicativo com Maven
+#RUN mvn -N io.takari:maven:wrapper
 RUN ./mvnw install -DskipTests
 
 # Segunda etapa da construção, para obter uma imagem mais limpa e leve

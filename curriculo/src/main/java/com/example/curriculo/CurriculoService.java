@@ -1,11 +1,15 @@
-package org.example.curriculo;
+package com.example.curriculo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
- 
+import com.example.curriculo.Curriculo;
+import com.example.curriculo.CurriculoRepository;
+import lombok.Data;
+
 import java.util.List;
 import java.util.Optional;
  
+@Data
 @Service
 public class CurriculoService {
  

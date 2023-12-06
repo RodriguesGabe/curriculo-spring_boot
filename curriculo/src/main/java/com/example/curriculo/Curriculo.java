@@ -1,15 +1,14 @@
-package org.example.curriculo;
+package com.example.curriculo;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;  
-import lombok.getters;
-import lombok.setters;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import lombok.Data;
 
-@getters
-@setters
+@Data
 @Entity
+
 public class Curriculo {
  
     @Id

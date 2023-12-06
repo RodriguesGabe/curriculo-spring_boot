@@ -1,12 +1,14 @@
-package org.example.curriculo;
+package com.example.curriculo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
- 
+
+import lombok.Data;
 import java.util.List;
- 
+
+@Data
 @RestController
 @RequestMapping("/api/curriculo")
 public class CurriculoController {
